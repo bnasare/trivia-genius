@@ -10,6 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #102A71;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -36,7 +37,8 @@ h1 {
     width: 100%;
     min-height: 100vh;
     background-color: #A3D5FF;
-    border-radius: 30px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .header {
