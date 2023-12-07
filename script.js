@@ -24,8 +24,6 @@ loginButton.addEventListener('click', function (event) {
     const password = passwordInput.value;
 
     if (username === 'admin' && password === 'admin') {
-        alert('Login successful!');
-        console.log('Attempting to redirect...');
         redirectToQuiz();
     } else {
         alert('Login failed!');
