@@ -204,10 +204,11 @@ h1 {
     font-size: 20px;
     font-family: inherit;
     margin-top: 30px;
+    margin-bottom: 10px;
     padding: 10px;
     border: none;
     background-color: #102a71ab;
-    color: #102a71ab;
+    color: #A3D5FF;
     font-weight: bolder;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
@@ -216,5 +217,30 @@ h1 {
 
 .form button:hover {
     background-color: #A3D5FF;
-    color: white;
+    color: #102a71ab;
+    transform: scale(0.9);
+}
+
+.form button:focus {
+    outline: none;
+}
+
+.signUp {
+    font-size: 14px;
+}
+
+.signUp a {
+    color: #102A71;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.forgot {
+    font-size: 14px;
+}
+
+.forgot a {
+    color: #102A71;
+    font-weight: bolder;
+    text-decoration: none;
 }
