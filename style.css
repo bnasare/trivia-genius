@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #102A71;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    color: white;
+    margin: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #A3D5FF;
+    border-radius: 30px;
+}
+
+.header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: inherit;
+    align-items: center;
+    font-weight: 800;
+    padding-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    color: #102A71;
+    font-weight: bolder;
+}
+
+.header .title {
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.quiz {
+    width: 400px;
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.quiz.show {
+    opacity: 1;
+}
+
+
+.quiz .image {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.quiz .image img {
+    width: 100%;
+}
+
+.quiz .salutation div {
+    margin-bottom: 5px;
+    margin-top: 2px;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.quiz .salutation span {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.quiz .salutation {
+    width: 100%;
+}
+
+.quiz .form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form label.username {
+    color: #102A71;
+    font-weight: bolder;
+}
+
+.form #username {
+    width: 100%;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #102a71ab;
+    color: white;
+}
+
+.form #username:focus {
+    outline: none;
+}
+
+.form #username::placeholder {
+    color: white;
+}
+
+.form label.password {
+    color: #102A71;
+    font-weight: bolder;
+}
+
+.form #password {
+    width: 100%;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    margin-top: 5px;
+    border: none;
+    background-color: #102a71ab;
+    color: white;
+}
+
+.form #password:focus {
+    outline: none;
+}
+
+.form #password::placeholder {
+    color: white;
+}
+
+.form label.remember {
+    font-size: 14px;
+    color: #102A71;
+}
+
+.form .remember {
+    display: flex;
+    align-items: center;
+}
+
+.form .remember input {
+    margin-right: 5px;
+}
+
+.form button {
+    width: 100%;
+    border-radius: 40px;
+    font-size: 20px;
+    font-family: inherit;
+    margin-top: 30px;
+    padding: 10px;
+    border: none;
+    background-color: #102a71ab;
+    color: #102a71ab;
+    font-weight: bolder;
+    cursor: pointer;
+}
