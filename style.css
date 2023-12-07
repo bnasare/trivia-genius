@@ -16,6 +16,12 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: -moz-scrollbars-none;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -56,6 +62,12 @@ h1 {
     font-size: 25px;
 }
 
+@media (max-width: 500px) {
+    .header .subtitle {
+        display: none;
+    }
+}
+
 .quiz {
     width: 400px;
     flex-wrap: wrap;
@@ -68,13 +80,19 @@ h1 {
     transform: translateX(-50%);
     margin-top: 20px;
     opacity: 0;
+    padding-bottom: 50px;
     transition: opacity 0.5s ease-out;
+}
+
+@media (max-width: 500px) {
+    .quiz {
+        width: 90%;
+    }
 }
 
 .quiz.show {
     opacity: 1;
 }
-
 
 .quiz .image {
     width: 250px;
@@ -190,4 +208,11 @@ h1 {
     color: #102a71ab;
     font-weight: bolder;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px #102a71ab;
+}
+
+.form button:hover {
+    background-color: #A3D5FF;
+    color: white;
 }
